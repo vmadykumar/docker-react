@@ -3,6 +3,9 @@ services:
         - docker
 
 before_install:
-        -docker build -t vikashkumar/docker-react -f Dockerfile.dev .
+        - docker build -t vikashkumar/docker-react -f Dockerfile.dev .
+
+script:
+        - docker run -e CI=true vikashkumar/docker-react npm run test
 
 
