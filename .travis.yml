@@ -13,7 +13,7 @@ deploy:
         region: "ap-south-1"
         app: "vikash-react"
         env: "VikashReact-env"
-        bucket_name: "arn:aws:s3:::elasticbeanstalk-ap-south-1-007131111482"
+        bucket_name: "elasticbeanstalk-ap-south-1-007131111482"
         bucket_path: "vikash-react"
         on:
            branch: master
